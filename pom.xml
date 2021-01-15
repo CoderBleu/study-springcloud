@@ -25,6 +25,8 @@
     <module>cloud-eureka-server7002</module>
     <module>cloud-provider-payment9002</module>
     <module>cloud-consumer-order9012</module>
+    <module>cloud-provider-payment-consul9005</module>
+      <module>cloud-consumer-order-feign9014</module>
   </modules>
 
   <!-- 统一管理jar包版本 -->

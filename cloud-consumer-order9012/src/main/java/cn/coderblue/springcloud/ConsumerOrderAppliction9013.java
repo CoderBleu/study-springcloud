@@ -1,9 +1,12 @@
 package cn.coderblue.springcloud;
 
 
+import cn.coderblue.myrule.MySelfRule;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
+import org.springframework.cloud.netflix.ribbon.RibbonClient;
 
 /**
  * @author coderblue
@@ -11,12 +14,12 @@ import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
  */
 @SpringBootApplication
 @EnableEurekaClient
-// @EnableDiscoveryClient
-// @ComponentScan(basePackageClasses = {cn.coderblue.springcloud.config.ApplicationContextConfig.class})
-public class ConsumerOrderAppliction9012 {
+@EnableDiscoveryClient
+// @RibbonClient(name = "CLOUD-PAYMENT-SERVICE",configuration= MySelfRule.class)
+public class ConsumerOrderAppliction9013 {
 
     //@RibbonClient(name = "CLOUD-PAYMENT-SERVICE",configuration=MySelfRule.class)
     public static void main(String[] args) {
-        SpringApplication.run(ConsumerOrderAppliction9012.class, args);
+        SpringApplication.run(ConsumerOrderAppliction9013.class, args);
     }
 }
