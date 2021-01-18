@@ -28,6 +28,10 @@
     <module>cloud-provider-payment-consul9005</module>
       <module>cloud-consumer-order-feign9014</module>
       <module>cloud-consumer-feign-hystrix-order9015</module>
+    <module>cloud-consumer-hystrix-dashboard9017</module>
+    <module>cloud-provider-feign-hystrix-order9016</module>
+    <module>cloud-gateway-gateway9527</module>
+    <module>cloud-config-center-3344</module>
   </modules>
 
   <!-- 统一管理jar包版本 -->
