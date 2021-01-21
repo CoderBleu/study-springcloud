@@ -18,8 +18,9 @@ spring:
             server-addr: localhost:8848
             dataId: cloudalibaba-sentinel-service
             groupId: DEFAULT_GROUP
+            namespace: 7d8f0f5a-6a53-4785-9686-dd460158e5d4 #指定命名空间
             data-type: json
-            rule-type: flow
+            rule-type: flow #限流规则
 
 management:
   endpoints:
